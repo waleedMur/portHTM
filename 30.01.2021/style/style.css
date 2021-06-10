@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500&family=Norican&display=swap');
+/*HEADER*/
+
+header{
+	height: 100vh;
+	background: url(../assets/header-bg.jpg) center/cover no-repeat;
+}
+
+.text-center{text-align:center}
+.white{color: #fff;}
+.font-400{font:400 1em Karla, sans-serif;}
+.font-300{font:300 1em Karla, sans-serif;}
+.uppercase{text-transform:uppercase;}
+.nav h2{
+	font:200 1.9em Karla, sans-serif;
+	padding-bottom: 15px;
+}
+
+.nav ul{
+	padding: 0 0 15px 0;
+}
+
+.nav li{
+	padding: 0 0 5px 0;
+}
+
+.nav li:last-child{
+	padding:0;
+}
+
+.web-title{
+	margin-top:100px;
+}
+.web-title h1{
+	font: 200 1.8em Karla, sans-serif;
+}
+
+.web-title p{
+	font: 300 1.1em Karla, sans-serif;
+}
+
+	
+/*Content*/
+	
+.sushi-sec{
+	background-color:#ae2a2a;
+}
+	
+.sushi{
+	margin: auto;
+	background: url(../assets/suhsi.jpg) center/cover no-repeat;
+	width: 100%;
+	min-height: 280px;
+}
+
+.section-story{
+	color: #edd9d9;
+	padding: 20px;
+}
+
+h3{
+	font:2em Norican, sans-serif;
+}
+
+hr{
+	max-width: 110px;
+}
+.red-line{
+	border: 1px solid #ae2a2a;
+}
+.sushi-reciepes{
+	background: url(../assets/suhsi-2.jpg) center/cover;
+}
+
+.sushi-receip{
+	margin: auto;
+	padding: 120px 0;
+}
+
+.menu-container>div{
+	padding: 0 10px;
+}
+.menu-container p{
+	padding: 20px 0 55px 0 ;
+}
+.menu-container span{
+	float: right;
+	color: #d1517e;
+	font-weight: 600;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: #25262a;
+}
+
+footer>div{
+	display: flex;
+	flex-direction: column;
+}
+footer>div img{
+	width: 100%;
+}
+
+footer .container{
+	padding: 85px 10px;
+}
+
+footer .container>div{
+	max-width: 255px;
+}
+
+footer .container h4{
+	font: 400 1.6em Karla, san-serif;
+	padding-bottom: 10px;
+}
+
+footer .container p{
+	font: 200 .8em/18.7px Karla, san-serif;
+}
+
+li>h6{
+	font: 400 1.6em Karla, san-serif;
+	padding: 20px 0;	
+}
+li a{
+	font: 200 1em Karla, san-serif;
+	padding-bottom: 25px;
+}
+@media(min-width: 768px){
+	/*HEADER*/
+	
+	.nav{
+		display: flex;
+		align-items: center;
+		justify-content:space-between;
+		padding: 60px;
+	}
+	
+	.nav h2{
+		padding:0;
+	}
+	
+	.nav ul{
+		padding:0;
+	}
+	
+	.nav li {
+		display:inline-block;
+		padding:0;
+		margin-right: 15px;
+	}
+	
+	.web-title{
+		max-width: 715px;
+		margin:0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%)
+	}
+	
+	.web-title h1{
+		font-size: 4.5em;
+	}
+	.web-title p{
+		word-spacing: 2px;
+		line-height: 19px;
+		font-size: 1em;
+	}
+	
+	/*Content*/
+	h3{
+	font: 3.5em Norican, sans-serif;
+	}
+	
+	.container{max-width: 1110px; margin: 0 auto;}
+	
+	/*FOOTER*/
+
+	footer>div{
+		width: 100%;
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+	}
+	footer>div img{
+		max-width: 480px;
+	}
+	
+	footer ul{
+		display:flex;
+	}
+	
+	footer li{
+		margin-right: 25px;
+	}
+	
+	footer li:last-child{
+		margin:0;
+	}
+	
+	footer h6{
+		padding: 0 0 10px 0;
+	}
+}
+
+@media (min-width: 1010px){
+	.sushi-container{
+		display: flex;
+		padding: 120px 0;
+	}
+	.story-container{
+		width: 60%;
+	}
+	.sushi{
+		width: 40%;
+		height: 400px;
+		box-shadow: 0 0 35px #000;
+	}
+	
+	.section-story{
+		max-width: 540px;
+		font-size: 1.1em;
+		margin: auto;
+		padding-top: 55px;
+	}
+	
+	.section-story p{
+		line-height: 30px;
+	}
+	
+	hr{
+		margin-bottom: 55px;
+	}
+	
+	.recipes{
+		padding:0!important;
+	}
+	
+	.menu-container{
+		padding: 120px 0;
+	}
+	
+	.menu-container>div{
+		column-count: 2;
+		column-gap: 190px;
+	}
+	
+	/*FOOTER*/
+	
+	footer .container>div{
+		margin-right: 100px;
+	}
+	footer li{
+		margin-right: 75px;
+	}
+}

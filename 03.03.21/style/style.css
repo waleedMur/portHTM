@@ -1,0 +1,60 @@
+#login-form{padding: 40px 0;}
+.input-field:nth-child(2){margin-bottom: 40px;}
+#search-form{border-bottom: 1px solid;}
+.menu{border:0;}
+.menu i{padding: 0 15px;}
+.msg-count{
+    margin-left: 15px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+.user-info p>i{padding: 0;}
+.menu a.collection-item {
+    display:flex;
+    border-bottom: 0;
+    padding-left: 0;
+}
+.menu .collection-item.avatar div>.circle{
+    width: 70px!important;
+    height: 70px!important;
+}
+.menu .collection-item.avatar{
+    padding-left: 80px;
+    border-bottom: 0;
+}
+
+.post-gallery img{object-fit: contain;}
+.nav-wrapper .input-field input[type=search] {padding-left: 0;}
+#search-form>.row{margin-bottom: 0;}
+#search-form>.row .input-field{margin-bottom: 0;}
+#frnd-search-bar{padding: 15px 0;}
+.card-title-bg{background-color: rgba(0, 0, 0, 0.336)!important;}
+
+#profile-img{width:100%}
+.add-friend-btn{width:100%}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){margin-right: 0;}
+.user-stuff p{margin: 0;}
+.friends-list .card-content{padding: 20px 0 5px 10px;}
+.friends-list img{width:45px}
+.friends-list p{margin: 0; font-size: .8em;}
+.mh-315{max-height: 315px;}
+.mh-555{max-height: 555px;}
+.p1{padding: 1em;}
+.pl1{padding-left: .5em;}
+.pr1{padding-right: .3em;}
+.pr2{padding-right: 1em;}
+.pb-0{padding-bottom: 0!important;}
+.mb-1{margin-bottom: .3em!important;}
+.mt-0{margin-top: 0!important;}
+.mr1{margin-right: .3em;}
+.clear-fix{overflow: auto;}
+.users-dialog .collection-item {padding: 5px 0;}
+@media(max-width:600px){
+    #burger-menu{display: inherit!important;}
+    .SNnavigation{display: inherit!important;}
+    .mh-315{max-height: inherit;}
+    .friends-list p{font-size: 1.2em;}
+}
+@media(max-width:375px){
+    .mw{display: block;}
+}

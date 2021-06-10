@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Josefin+Sans:wght@100;300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#banner{
+    width:300px;
+    height: 600px;
+    background:url("../assets/bg.jpg") 50% 0%/400% no-repeat;
+    position: relative;
+    animation-name:bg;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    display: none;
+}
+@keyframes bg{
+    from{background-position: 50% 0%; background-size: 400%;}
+    to{background-position: 50% 50%; background-size: 200%;}
+}
+
+#ad-text{
+    position: absolute;
+    top: 10%;
+    transform: translateX(100%);
+    text-align: center;
+    animation-name:title;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes title{
+    0%{transform: translateX(100%);}
+    25%{transform: translateX(0%);}
+    50%{transform: translateX(-100%);}
+    65%{transform: translate(-100%, -200%);}
+    80%{transform: translate(100%, -200%);}
+    100%{transform: translate(100%, 0%);}
+}
+.first-t{
+    font:2em Poppins, sans-serif;
+    line-height: 1;
+    font-weight: 100;
+    color: #fff;
+}
+#ad-text2{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    transform: translateX(200%);
+    animation-name:title2;
+    animation-duration: 10s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes title2{
+    0%{transform: translateX(200%);}
+    25%{transform: translateX(0%);}
+    50%{transform: translateX(-200%);}
+    65%{transform: translate(-200%, -300%);}
+    80%{transform: translate(200%, -300%);}
+    100%{transform: translate(200%, 0%);}
+}
+.second-t{
+    font:2em Poppins, sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-style: italic;
+}
+.second-t i{
+    font-style: italic;
+}
+#phone-block{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    bottom: -100%;
+    animation-name: phone;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes phone{
+    from{bottom:-100%;}
+    to{bottom: 10%;}
+}
+#phone{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: matrix(1, 0, 0, 1, -90, 0);
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-delay: 5s;
+}
+@keyframes wave{
+    0%{transform: matrix(1, 0, 0, 1, -90, 0);}
+    50%{transform: matrix(1.1, 0, 0, 1.1, -90, 0);}
+    100%{transform: matrix(1, 0, 0, 1, -90, 0);}
+}
+#smoke-phone{
+    width:80%;
+    height: 60%;
+    background: url("../assets/blue-smk.png") center/contain no-repeat;
+    opacity: .5;
+    animation-name: waves;
+    animation-duration: 20s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes waves{
+    0%{transform: translateX(0%);}
+    25%{transform: translateX(-5%);}
+    50%{transform: translateX(10%);}
+    75%{transform: translateX(-5%);}
+    100%{transform: translateX(0%);}
+}
+.smoke{
+    width:100%;
+    height: 75%;
+    position: absolute;
+    bottom: -70%;
+    left: 10%;
+    transform: scale(2);
+    animation-name: smoke;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes smoke{
+    from{left: -100%}
+    to{left: 10%;}
+}
+
+/*SECOND BANNER*/
+
+#second-banner{
+    width:300px;
+    height: 600px;
+    background:url("../assets/second-bg.jpg") 50% 0/600% no-repeat;
+    position: relative;
+    animation-name: second-bg;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    text-align: center;
+}
+@keyframes second-bg{
+    0%{background-position:50% 0; background-size: 600%;}
+    50%{background-position:50% 50%; background-size: 400%;}
+    100%{background-position: 100% 50%; background-size: 400%;}
+}
+.table{
+    background-color: #e2b787;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -50%;
+    border-radius: 50%;
+    transform: scale(2);
+    animation-name: table;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes table{
+    from{bottom: -50%;}
+    to{bottom: 0;}
+}
+
+.phone2{
+    width: 60%;
+    position: absolute;
+    left: 165%;
+    bottom: 5%;
+    animation-name: phone2;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes phone2{
+    from{left:165%}
+    to{left: 35%}
+}
+.semeni{
+    width: 50%;
+    position: absolute;
+    left: 165%;
+    bottom: 0%;
+    animation-name: semeni;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes semeni{
+    from{left:165%}
+    to{left: 5%}
+}
+.novruz-first-title{
+    transform: scale(0);
+    opacity: 0;
+    animation-name: first-title;
+    animation-delay: 3s;
+    animation-duration: 5s;
+}
+@keyframes first-title{
+    0%{transform: scale(0.0); opacity: 0.0;}
+    25%{transform: scale(1.0); opacity: 1.0;}
+    50%{transform: scale(1.0); opacity: 1.0;}
+    75%{transform: scale(1.0); opacity: 1.0;}
+    100%{transform: scale(2.0); opacity: 0.0;}
+}
+.novruz-second-title{
+    transform: scale(0);
+    opacity: 0;
+    animation-name: second-title;
+    animation-delay: 8s;
+    animation-duration: 5s;
+}
+@keyframes second-title{
+    0%{transform: scale(0.0); opacity: 0.0;}
+    25%{transform: scale(1.0); opacity: 1.0;}
+    50%{transform: scale(1.0); opacity: 1.0;}
+    75%{transform: scale(1.0); opacity: 1.0;}
+    100%{transform: scale(2.0); opacity: 0.0;}
+}
+.novruz-title{
+    position: absolute;
+    width: 100%;
+    top:10%;
+}
+.novruz-title h3{
+    font: bold 1.5em 'Josefin Sans', sans-serif;
+    color: #56925f;
+}
+.second-title{
+    position: absolute;
+    width: 100%;
+    top:10%;
+    transform: scale(0);
+    opacity: 0;
+    animation-name: main-title;
+    animation-delay: 13s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes main-title{
+    from{transform: scale(0.0); opacity: 0.0;}
+    to{transform: scale(1.0); opacity: 1.0;}
+}
+.second-title h3{
+    font: bold 1.5em 'Josefin Sans', sans-serif;
+    color: #56925f;
+}
+.second-title p{
+    font: 1em 'Josefin Sans', sans-serif;
+    color: #000;
+}
+
+.green-area{
+    width:100%;
+    position: absolute;
+    bottom: -10%;
+    right: -100%;
+    transform: rotate(-70deg) scale(2);
+    animation-name: green-obj;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes green-obj{
+    from{right:-100%}
+    to{right: -50%}
+}
+}

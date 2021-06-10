@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{font-family: Roboto, sans-serif;}
+
+/*BOOTSTRAP CSS*/
+.navbar{background-color: rgba(255,255,255, .7)!important;}
+header .card{padding-top: 10em;}
+.card i{background: linear-gradient(to right, #73c5f2, #02679d); -webkit-background-clip:text; -webkit-text-fill-color: transparent;}
+.carousel-indicators .active{transform: scale(1.5); transition: transform .6s ease-in;}
+.carousel-indicators [data-bs-target]{box-sizing: inherit;}
+/*OWN CSS*/
+:root{--sky: #6bc2f1;}
+
+.text-sky{color: var(--sky)}
+.bg-sky{background-color: var(--sky)}
+header{background: url(../assets/header-bg.jpg) center/cover no-repeat;}
+h1{font-size: calc(2rem + 1.5vw)}
+.operation{background: url(../assets/operation.jpg) center/cover no-repeat; height: 100%;}
+.childlren{background: url(../assets/children.jpg) center/cover no-repeat; height: 100%;}
+.vh-50{height: 50vh;}
+.vh-75{height: 75vh;}
+#image1{background: url(../assets/gallery-1.jpg) center/cover no-repeat; }
+#image2{background: url(../assets/gallery-2.jpg) center/cover no-repeat; }
+#image3{background: url(../assets/gallery-3.jpg) center/cover no-repeat; }
+#image4{background: url(../assets/gallery-4.jpg) center/cover no-repeat; }
+#image5{background: url(../assets/gallery-5.jpg) center/cover no-repeat; }
+#image6{background: url(../assets/gallery-6.jpg) center/cover no-repeat; }
+.opacity-0{opacity: 0;}
+#slider-img1{background: url(../assets/slider-img1.png) center/cover no-repeat; width: 45px; height: 45px;}
+#slider-img2{background: url(../assets/slider-img2.png) center/cover no-repeat; width: 45px; height: 45px;}
+#slider-img3{background: url(../assets/slider-img3.png) center/cover no-repeat; width: 45px; height: 45px;}
+#slider-img4{background: url(../assets/slider-img4.png) center/cover no-repeat; width: 45px; height: 45px;}
+#slider-img5{background: url(../assets/slider-img5.png) center/cover no-repeat; width: 45px; height: 45px;}
+#slider-img6{background: url(../assets/slider-img6.png) center/cover no-repeat; width: 45px; height: 45px;}
+.letter-spacing{letter-spacing: 3px;}
+footer section:last-child{background-color: #072135;}
